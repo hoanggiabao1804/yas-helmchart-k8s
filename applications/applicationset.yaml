@@ -34,7 +34,7 @@ spec:
                       valueFiles:
                           - $values/{{env}}/{{service}}-values.yaml
 
-                - repoURL: https://github.com/hoanggiabao1804/yas-gitops.git
+                - repoURL: https://github.com/hoanggiabao1804/yas-helmchart-k8s.git
                   targetRevision: HEAD
                   ref: values
 

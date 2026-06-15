@@ -1,7 +1,7 @@
 ui:
   image:
     repository: 23120022/yas-storefront
-    tag: 7b5bc9f
+    tag: 598b601
   nameOverride: storefront-ui
   fullnameOverride: storefront-ui
   #  extraVolumes:

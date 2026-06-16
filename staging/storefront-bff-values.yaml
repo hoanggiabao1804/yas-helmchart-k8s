@@ -1,20 +1,16 @@
 backend:
   image:
-    repository: ghcr.io/nashtech-garage/yas-storefront-bff
-    tag: latest
-
+    repository: 23120022/yas-storefront-bff
+    tag: v0.1.3
   nameOverride: storefront-bff
   fullnameOverride: storefront-bff
-
   deployment:
     annotations:
       configmap.reloader.stakater.com/reload: "yas-gateway-routes-config-configmap,storefront-bff-extra-configmap"
-
   ingress:
     enabled: true
     host: storefront.yas.local.com
     path: /
-
   extraEnvs:
     - name: SPRING_PROFILES_ACTIVE
       value: prod

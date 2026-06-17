@@ -15,6 +15,7 @@ spec:
                             - service: storefront-bff
                             - service: product
                             - service: sampledata
+                            - service: media
                   - list:
                         elements:
                             - env: dev

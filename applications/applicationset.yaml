@@ -14,10 +14,11 @@ spec:
                             - service: storefront-ui
                             - service: storefront-bff
                             - service: product
+                            - service: sampledata
                   - list:
                         elements:
                             - env: dev
-                            - env: staging
+                            # - env: staging
 
     template:
         metadata:

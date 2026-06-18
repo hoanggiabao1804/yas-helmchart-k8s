@@ -18,6 +18,7 @@ spec:
                             - service: media
                             - service: backoffice-ui
                             - service: backoffice-bff
+                            - service: cart
                   - list:
                         elements:
                             - env: dev

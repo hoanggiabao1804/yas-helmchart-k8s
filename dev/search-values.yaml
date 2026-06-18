@@ -1,8 +1,7 @@
 backend:
   image:
-    repository: ghcr.io/nashtech-garage/yas-search
-    tag: latest
-
+    repository: 23120022/yas-search
+    tag: 95ff783
   nameOverride: search
   fullnameOverride: search
   databaseName: search
@@ -20,4 +19,3 @@ backend:
       mountPath: /opt/yas/search
   extraApplicationConfigPaths:
     - /opt/yas/search/search-application.yaml
-

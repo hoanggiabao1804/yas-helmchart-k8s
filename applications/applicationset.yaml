@@ -16,6 +16,8 @@ spec:
                             - service: product
                             - service: sampledata
                             - service: media
+                            - service: backoffice-ui
+                            - service: backoffice-bff
                   - list:
                         elements:
                             - env: dev

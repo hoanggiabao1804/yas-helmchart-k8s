@@ -21,6 +21,7 @@ spec:
                             - service: cart
                             - service: customer
                             - service: inventory
+                            - service: location
                   - list:
                         elements:
                             - env: dev

@@ -1,0 +1,18 @@
+backend:
+  image:
+    repository: 23120022/yas-product
+    tag: feea613
+  nameOverride: product
+  fullnameOverride: product
+  databaseName: product
+  ingress:
+    enabled: false
+  extraVolumes:
+    - name: product-application-config
+      configMap:
+        name: product-application-configmap
+  extraVolumeMounts:
+    - name: product-application-config
+      mountPath: /opt/yas/product
+  extraApplicationConfigPaths:
+    - /opt/yas/product/product-application.yaml

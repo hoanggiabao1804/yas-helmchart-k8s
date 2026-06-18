@@ -1,0 +1,18 @@
+backend:
+  image:
+    repository: 23120022/yas-media
+    tag: 77d83f3
+  nameOverride: media
+  fullnameOverride: media
+  databaseName: media
+  ingress:
+    enabled: false
+  extraVolumes:
+    - name: media-application
+      configMap:
+        name: media-application-configmap
+  extraVolumeMounts:
+    - name: media-application
+      mountPath: /opt/yas/media
+  extraApplicationConfigPaths:
+    - /opt/yas/media/media-application.yaml

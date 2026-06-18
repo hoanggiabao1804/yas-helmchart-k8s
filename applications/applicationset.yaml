@@ -20,6 +20,7 @@ spec:
                             - service: backoffice-bff
                             - service: cart
                             - service: customer
+                            - service: inventory
                   - list:
                         elements:
                             - env: dev

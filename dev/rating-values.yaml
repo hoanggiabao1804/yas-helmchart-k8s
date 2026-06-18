@@ -1,11 +1,9 @@
 backend:
   image:
-    repository: ghcr.io/nashtech-garage/yas-rating
-    tag: latest
-
+    repository: 23120022/yas-rating
+    tag: aa2792f
   nameOverride: rating
   fullnameOverride: rating
   databaseName: rating
   ingress:
     enabled: false
-

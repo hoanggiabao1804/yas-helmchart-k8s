@@ -27,6 +27,7 @@ spec:
                             - service: payment-paypal
                             - service: promotion
                             - service: rating
+                            - service: recommendation
                   - list:
                         elements:
                             - env: dev

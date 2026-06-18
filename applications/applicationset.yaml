@@ -28,6 +28,7 @@ spec:
                             - service: promotion
                             - service: rating
                             - service: recommendation
+                            - service: search
                   - list:
                         elements:
                             - env: dev

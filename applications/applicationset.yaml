@@ -30,6 +30,7 @@ spec:
                             - service: recommendation
                             - service: search
                             - service: tax
+                            - service: webhook
                   - list:
                         elements:
                             - env: dev

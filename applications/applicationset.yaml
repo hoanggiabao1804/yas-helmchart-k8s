@@ -29,6 +29,7 @@ spec:
                             - service: rating
                             - service: recommendation
                             - service: search
+                            - service: tax
                   - list:
                         elements:
                             - env: dev

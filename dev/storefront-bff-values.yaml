@@ -3,7 +3,7 @@ backend:
     # repository: ghcr.io/nashtech-garage/yas-storefront-bff
     # tag: latest
     repository: 23120022/yas-storefront-bff
-    tag: a351f9e
+    tag: test
   nameOverride: storefront-bff
   fullnameOverride: storefront-bff
   deployment:

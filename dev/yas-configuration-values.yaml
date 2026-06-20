@@ -99,6 +99,7 @@ gatewayRoutesConfig:
       gateway:
         routes:
           - id: product_api
+            order: 0
             uri: http://product
             predicates:
               - Path=/api/product/**
@@ -134,6 +135,7 @@ gatewayRoutesConfig:
               - RewritePath=/api/(?<segment>.*), /$\{segment}
               - TokenRelay=
           - id: media_api
+            order: 0
             uri: http://media
             predicates:
               - Path=/api/media/**
@@ -190,6 +192,7 @@ gatewayRoutesConfig:
               - RewritePath=/api/(?<segment>.*), /$\{segment}
               - TokenRelay=
           - id: sampledata_api
+            order: 0
             uri: http://sampledata
             predicates:
               - Path=/api/sampledata/**
@@ -197,6 +200,7 @@ gatewayRoutesConfig:
               - RewritePath=/api/(?<segment>.*), /$\{segment}
               - TokenRelay=
           - id: ui
+            order: 10000
             uri: ${UI_HOST}
             predicates:
               - Path=/**

@@ -1,7 +1,5 @@
 backend:
   image:
-    # repository: ghcr.io/nashtech-garage/yas-storefront-bff
-    # tag: latest
     repository: 23120022/yas-storefront-bff
     tag: test1
   nameOverride: storefront-bff
@@ -10,9 +8,46 @@ backend:
     annotations:
       configmap.reloader.stakater.com/reload: "yas-gateway-routes-config-configmap,storefront-bff-extra-configmap"
   ingress:
-    enabled: true
-    host: dev.storefront.yas.local.com
-    path: /
+    enabled: false
+    # enabled: true
+    # host: dev.storefront.yas.local.com
+    # path: /
+  extraObjects:
+    - apiVersion: networking.istio.io/v1
+      kind: Gateway
+      metadata:
+        name: storefront-gateway
+        namespace: dev
+      spec:
+        selector:
+          istio: ingressgateway
+        servers:
+          - port:
+              number: 80
+              name: http
+              protocol: HTTP
+            hosts:
+              - dev.storefront.yas.local.com
+
+    - apiVersion: networking.istio.io/v1
+      kind: VirtualService
+      metadata:
+        name: storefront-bff
+        namespace: dev
+      spec:
+        hosts:
+          - dev.storefront.yas.local.com
+        gateways:
+          - storefront-gateway
+        http:
+          - match:
+              - uri:
+                  prefix: /
+            route:
+              - destination:
+                  host: storefront-bff.dev.svc.cluster.local
+                  port:
+                    number: 80
   extraEnvs:
     - name: SPRING_PROFILES_ACTIVE
       value: prod

@@ -29,6 +29,7 @@ backend:
             hosts:
               - dev.storefront.yas.local.com
               - api.yas.local.com
+              - identity.yas.local.com
 
     - apiVersion: networking.istio.io/v1
       kind: VirtualService

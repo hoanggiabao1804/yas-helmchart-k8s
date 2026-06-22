@@ -18,7 +18,7 @@ spec:
                             - service: media
                             # - service: backoffice-ui
                             # - service: backoffice-bff
-                            # - service: cart
+                            - service: cart
                             # - service: customer
                             # - service: inventory
                             # - service: location

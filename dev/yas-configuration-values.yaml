@@ -241,7 +241,7 @@ storefrontBffExtraConfig:
       oauth2:
         client:
           provider:
-            keycloak:
+            keycloak-internal:
             #  issuer-uri: http://identity.yas.local.com/realms/Yas
               authorization-uri: http://identity.yas.local.com/realms/Yas/protocol/openid-connect/auth
               token-uri: http://keycloak-service.keycloak.svc.cluster.local/realms/Yas/protocol/openid-connect/token

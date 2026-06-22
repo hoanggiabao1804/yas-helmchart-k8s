@@ -22,7 +22,7 @@ spec:
                             - service: customer
                             # - service: inventory
                             # - service: location
-                            # - service: order
+                            - service: order
                             # - service: payment
                             # - service: payment-paypal
                             # - service: promotion

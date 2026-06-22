@@ -7,7 +7,8 @@ credentials:
     password: LarUmB3A49NTg9YmgW4=
   keycloak:
     backofficeBffClientSecret: TVacLC0cQ8tiiEKiTVerTb2YvwQ1TRJF
-    storefrontBffClientSecret: ZrU9I0q2uXBglBnmvyJdkl1lf0ncr8tn
+    # storefrontBffClientSecret: ZrU9I0q2uXBglBnmvyJdkl1lf0ncr8tn
+    storefrontBffClientSecret: Px9dJpywlssGpMdX3La_NeLQg4PXjYXi
     customerManagementClientSecret: NKAr3rnjwm9jlakgKpelukZGFaHYqIWE
   redis:
     password: redis
@@ -243,9 +244,9 @@ storefrontBffExtraConfig:
             keycloak:
               issuer-uri: http://identity.yas.local.com/realms/Yas
           registration:
-            api-client:
+            keycloak:
               provider: keycloak
-              client-id: storefront-bff
+              client-id: storefront-bff-dev
               client-secret: ${KEYCLOAK_STOREFRONT_BFF_CLIENT_SECRET}
               scope: openid, profile, email, roles
 

@@ -26,7 +26,7 @@ spec:
                             # - service: payment
                             # - service: payment-paypal
                             # - service: promotion
-                            # - service: rating
+                            - service: rating
                             # - service: recommendation
                             # - service: search
                             # - service: tax

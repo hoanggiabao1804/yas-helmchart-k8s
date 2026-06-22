@@ -251,7 +251,7 @@ storefrontBffExtraConfig:
 
           registration:
             keycloak:
-              provider: keycloak
+              provider: keycloak-internal
               client-id: storefront-bff-dev
               client-secret: ${KEYCLOAK_STOREFRONT_BFF_CLIENT_SECRET}
               scope: openid, profile, email, roles

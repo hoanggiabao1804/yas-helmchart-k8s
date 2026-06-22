@@ -254,11 +254,17 @@ storefrontBffExtraConfig:
               provider: keycloak-internal
               client-id: storefront-bff-dev
               client-secret: ${KEYCLOAK_STOREFRONT_BFF_CLIENT_SECRET}
+              authorization-grant-type: authorization_code
+              client-authentication-method: client_secret_basic
+              redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
               scope: openid, profile, email, roles
             api-client:
               provider: keycloak-internal
               client-id: storefront-bff-dev
               client-secret: ${KEYCLOAK_STOREFRONT_BFF_CLIENT_SECRET}
+              authorization-grant-type: authorization_code
+              client-authentication-method: client_secret_basic
+              redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
               scope: openid, profile, email, roles
 
 # Media application config custom

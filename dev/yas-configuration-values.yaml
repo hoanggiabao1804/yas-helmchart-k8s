@@ -242,7 +242,13 @@ storefrontBffExtraConfig:
         client:
           provider:
             keycloak:
-              issuer-uri: http://identity.yas.local.com/realms/Yas
+            #  issuer-uri: http://identity.yas.local.com/realms/Yas
+              authorization-uri: http://identity.yas.local.com/realms/Yas/protocol/openid-connect/auth
+              token-uri: http://keycloak-service.keycloak.svc.cluster.local/realms/Yas/protocol/openid-connect/token
+              jwk-set-uri: http://keycloak-service.keycloak.svc.cluster.local/realms/Yas/protocol/openid-connect/certs
+              user-info-uri: http://keycloak-service.keycloak.svc.cluster.local/realms/Yas/protocol/openid-connect/userinfo
+              user-name-attribute: preferred_username
+
           registration:
             keycloak:
               provider: keycloak

@@ -27,7 +27,7 @@ spec:
                             # - service: payment-paypal
                             # - service: promotion
                             - service: rating
-                            # - service: recommendation
+                            - service: recommendation
                             # - service: search
                             # - service: tax
                             # - service: webhook

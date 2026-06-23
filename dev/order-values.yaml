@@ -1,7 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-order
-    tag: 8e7b01b
+    tag: cb1b738
   nameOverride: order
   fullnameOverride: order
   databaseName: order

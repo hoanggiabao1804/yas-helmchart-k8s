@@ -13,24 +13,24 @@ spec:
                             - service: yas-configuration
                             - service: storefront-ui
                             - service: storefront-bff
-                            - service: product
-                            - service: sampledata
-                            - service: media
-                            - service: backoffice-ui
-                            - service: backoffice-bff
-                            - service: cart
-                            - service: customer
-                            - service: inventory
-                            - service: location
-                            - service: order
-                            - service: payment
-                            - service: payment-paypal
-                            - service: promotion
-                            - service: rating
-                            - service: recommendation
-                            - service: search
-                            - service: tax
-                            - service: webhook
+                            # - service: product
+                            # - service: sampledata
+                            # - service: media
+                            # - service: backoffice-ui
+                            # - service: backoffice-bff
+                            # - service: cart
+                            # - service: customer
+                            # - service: inventory
+                            # - service: location
+                            # - service: order
+                            # - service: payment
+                            # - service: payment-paypal
+                            # - service: promotion
+                            # - service: rating
+                            # - service: recommendation
+                            # - service: search
+                            # - service: tax
+                            # - service: webhook
                   - list:
                         elements:
                             - env: dev

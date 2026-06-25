@@ -1,7 +1,8 @@
 backend:
   image:
-    repository: 23120022/yas-order
-    tag: cb1b738
+    repository: ghcr.io/nashtech-garage/yas-order
+    tag: latest
+
   nameOverride: order
   fullnameOverride: order
   databaseName: order
@@ -15,4 +16,4 @@ backend:
     - name: order-application-config
       mountPath: /opt/yas/order
   extraApplicationConfigPaths:
-    - /opt/yas/order/order-application.yaml
+    - /opt/yas/order/order-application.yaml  

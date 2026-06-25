@@ -1,7 +1,8 @@
 backend:
   image:
-    repository: 23120022/yas-tax
-    tag: ac0e044
+    repository: ghcr.io/nashtech-garage/yas-tax
+    tag: latest
+
   nameOverride: tax
   fullnameOverride: tax
   databaseName: tax

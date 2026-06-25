@@ -1,7 +1,8 @@
 backend:
   image:
-    repository: 23120022/yas-sampledata
-    tag: 95c0039
+    repository: ghcr.io/nashtech-garage/yas-sampledata
+    tag: latest
+
   nameOverride: sampledata
   fullnameOverride: sampledata
   databaseName: sampledata

@@ -1,7 +1,8 @@
 backend:
   image:
-    repository: 23120022/yas-inventory
-    tag: 6a8b6cd
+    repository: ghcr.io/nashtech-garage/yas-inventory
+    tag: latest
+
   nameOverride: inventory
   fullnameOverride: inventory
   databaseName: inventory

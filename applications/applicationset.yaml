@@ -16,21 +16,21 @@ spec:
                             - service: product
                             - service: sampledata
                             - service: media
-                            # - service: backoffice-ui
-                            # - service: backoffice-bff
+                            - service: backoffice-ui
+                            - service: backoffice-bff
                             - service: cart
                             - service: customer
-                            # - service: inventory
-                            # - service: location
+                            - service: inventory
+                            - service: location
                             - service: order
-                            # - service: payment
-                            # - service: payment-paypal
-                            # - service: promotion
+                            - service: payment
+                            - service: payment-paypal
+                            - service: promotion
                             - service: rating
                             - service: recommendation
-                            # - service: search
-                            # - service: tax
-                            # - service: webhook
+                            - service: search
+                            - service: tax
+                            - service: webhook
                   - list:
                         elements:
                             - env: dev

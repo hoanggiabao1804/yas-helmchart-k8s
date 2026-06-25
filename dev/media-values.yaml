@@ -1,7 +1,8 @@
 backend:
   image:
-    repository: 23120022/yas-media
-    tag: 77d83f3
+    repository: ghcr.io/nashtech-garage/yas-media
+    tag: latest
+
   nameOverride: media
   fullnameOverride: media
   databaseName: media

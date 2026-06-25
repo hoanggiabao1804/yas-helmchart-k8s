@@ -1,7 +1,8 @@
 backend:
   image:
-    repository: 23120022/yas-backoffice-bff
-    tag: 84db375
+    repository: ghcr.io/nashtech-garage/yas-backoffice-bff
+    tag: latest
+
   nameOverride: backoffice-bff
   fullnameOverride: backoffice-bff
   deployment:

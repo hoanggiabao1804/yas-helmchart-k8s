@@ -1,7 +1,8 @@
 backend:
   image:
-    repository: 23120022/yas-product
-    tag: feea613
+    repository: ghcr.io/nashtech-garage/yas-product
+    tag: latest
+
   nameOverride: product
   fullnameOverride: product
   databaseName: product
@@ -15,4 +16,4 @@ backend:
     - name: product-application-config
       mountPath: /opt/yas/product
   extraApplicationConfigPaths:
-    - /opt/yas/product/product-application.yaml
+    - /opt/yas/product/product-application.yaml  

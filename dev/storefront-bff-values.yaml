@@ -1,74 +1,20 @@
 backend:
   image:
-    repository: 23120022/yas-storefront-bff
-    tag: test1
+    repository: ghcr.io/nashtech-garage/yas-storefront-bff
+    tag: latest
+
   nameOverride: storefront-bff
   fullnameOverride: storefront-bff
+
   deployment:
     annotations:
       configmap.reloader.stakater.com/reload: "yas-gateway-routes-config-configmap,storefront-bff-extra-configmap"
-  ingress:
-    enabled: false
-    # enabled: true
-    # host: dev.storefront.yas.local.com
-    # path: /
-  extraObjects:
-    - apiVersion: networking.istio.io/v1
-      kind: Gateway
-      metadata:
-        name: storefront-gateway
-        namespace: dev
-      spec:
-        selector:
-          istio: ingressgateway
-        servers:
-          - port:
-              number: 80
-              name: http
-              protocol: HTTP
-            hosts:
-              - dev.storefront.yas.local.com
-              - api.yas.local.com
-              - identity.yas.local.com
 
-    - apiVersion: networking.istio.io/v1
-      kind: VirtualService
-      metadata:
-        name: storefront-bff
-        namespace: dev
-      spec:
-        hosts:
-          - dev.storefront.yas.local.com
-        gateways:
-          - storefront-gateway
-        http:
-          - match:
-              - uri:
-                  prefix: /
-            route:
-              - destination:
-                  host: storefront-bff.dev.svc.cluster.local
-                  port:
-                    number: 80
-    - apiVersion: networking.istio.io/v1
-      kind: VirtualService
-      metadata:
-        name: api-media
-        namespace: dev
-      spec:
-        hosts:
-          - api.yas.local.com
-        gateways:
-          - storefront-gateway
-        http:
-          - match:
-              - uri:
-                  prefix: /media
-            route:
-              - destination:
-                  host: media.dev.svc.cluster.local
-                  port:
-                    number: 80
+  ingress:
+    enabled: true
+    host: storefront.yas.local.com
+    path: /
+
   extraEnvs:
     - name: SPRING_PROFILES_ACTIVE
       value: prod

@@ -1,7 +1,7 @@
 backend:
   image:
-    repository: ghcr.io/nashtech-garage/yas-cart
-    tag: latest
+    repository: 23120022/yas-cart
+    tag: main
 
   nameOverride: cart
   fullnameOverride: cart

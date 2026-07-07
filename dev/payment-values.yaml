@@ -1,7 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-payment
-    tag: main
+    tag: test01
 
   nameOverride: payment
   fullnameOverride: payment

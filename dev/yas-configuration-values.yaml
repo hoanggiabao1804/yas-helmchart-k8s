@@ -215,7 +215,6 @@ backofficeBffExtraConfig:
         client:
           provider:
             keycloak:
-              issuer-uri: ""
               authorization-uri: http://identity.yas.local.com/realms/Yas/protocol/openid-connect/auth
               token-uri: http://keycloak-service.keycloak/realms/Yas/protocol/openid-connect/token
               jwk-set-uri: http://keycloak-service.keycloak/realms/Yas/protocol/openid-connect/certs
@@ -226,6 +225,8 @@ backofficeBffExtraConfig:
               provider: keycloak
               client-id: backoffice-bff
               client-secret: ${KEYCLOAK_BACKOFFICE_BFF_CLIENT_SECRET}
+              authorization-grant-type: authorization_code
+              redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
               scope: openid, profile, email, roles
 
 storefrontBffExtraConfig:
@@ -240,7 +241,6 @@ storefrontBffExtraConfig:
         client:
           provider:
             keycloak:
-              issuer-uri: ""
               authorization-uri: http://identity.yas.local.com/realms/Yas/protocol/openid-connect/auth
               token-uri: http://keycloak-service.keycloak/realms/Yas/protocol/openid-connect/token
               jwk-set-uri: http://keycloak-service.keycloak/realms/Yas/protocol/openid-connect/certs
@@ -251,6 +251,8 @@ storefrontBffExtraConfig:
               provider: keycloak
               client-id: storefront-bff
               client-secret: ${KEYCLOAK_STOREFRONT_BFF_CLIENT_SECRET}
+              authorization-grant-type: authorization_code
+              redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
               scope: openid, profile, email, roles
 
 # Media application config custom

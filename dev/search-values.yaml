@@ -1,7 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-search
-    tag: main
+    tag: localfix-20260707
 
   nameOverride: search
   fullnameOverride: search

@@ -24,6 +24,7 @@ spec:
                             - service: location
                             - service: order
                             - service: payment
+                            - service: payment-paypal
                             - service: promotion
                             - service: rating
                             - service: recommendation

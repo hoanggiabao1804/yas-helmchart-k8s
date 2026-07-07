@@ -1,7 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-payment-paypal
-    tag: dc99a5a
+    tag: 19db4aa
 
   nameOverride: payment-paypal
   fullnameOverride: payment-paypal

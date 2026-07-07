@@ -1,7 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-backoffice-bff
-    tag: localfix-20260707
+    tag: main
 
   nameOverride: backoffice-bff
   fullnameOverride: backoffice-bff

@@ -9,7 +9,7 @@ backend:
       configmap.reloader.stakater.com/reload: "yas-gateway-routes-config-configmap,backoffice-bff-extra-configmap"
   ingress:
     enabled: true
-    host: backoffice.yas.local.com
+    host: backoffice.staging.yas.local.com
     path: /
   extraEnvs:
     - name: SPRING_PROFILES_ACTIVE

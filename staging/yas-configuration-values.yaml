@@ -58,7 +58,7 @@ applicationConfig:
       oauth2:
         resourceserver:
           jwt:
-            issuer-uri: http://identity.yas.local.com/realms/Yas
+            issuer-uri: http://identity.staging.yas.local.com/realms/Yas
 
     datasource:
       url:
@@ -71,8 +71,8 @@ applicationConfig:
 
   springdoc:
     oauthflow:
-      authorization-url: http://identity.yas.local.com/realms/Yas/protocol/openid-connect/auth
-      token-url: http://identity.yas.local.com/realms/Yas/protocol/openid-connect/token
+      authorization-url: http://identity.staging.yas.local.com/realms/Yas/protocol/openid-connect/auth
+      token-url: http://identity.staging.yas.local.com/realms/Yas/protocol/openid-connect/token
 
   yas:
     services:
@@ -215,7 +215,7 @@ backofficeBffExtraConfig:
         client:
           provider:
             keycloak:
-              authorization-uri: http://identity.yas.local.com/realms/Yas/protocol/openid-connect/auth
+              authorization-uri: http://identity.staging.yas.local.com/realms/Yas/protocol/openid-connect/auth
               token-uri: http://keycloak-service.keycloak/realms/Yas/protocol/openid-connect/token
               jwk-set-uri: http://keycloak-service.keycloak/realms/Yas/protocol/openid-connect/certs
               user-info-uri: http://keycloak-service.keycloak/realms/Yas/protocol/openid-connect/userinfo
@@ -241,7 +241,7 @@ storefrontBffExtraConfig:
         client:
           provider:
             keycloak:
-              authorization-uri: http://identity.yas.local.com/realms/Yas/protocol/openid-connect/auth
+              authorization-uri: http://identity.staging.yas.local.com/realms/Yas/protocol/openid-connect/auth
               token-uri: http://keycloak-service.keycloak/realms/Yas/protocol/openid-connect/token
               jwk-set-uri: http://keycloak-service.keycloak/realms/Yas/protocol/openid-connect/certs
               user-info-uri: http://keycloak-service.keycloak/realms/Yas/protocol/openid-connect/userinfo
@@ -261,12 +261,12 @@ mediaApplicationConfig:
     servlet:
       context-path: /media
   yas:
-    publicUrl: http://api.yas.local.com/media
+    publicUrl: http://api.staging.yas.local.com/media
 
 # Customer application config custom
 customerApplicationConfig:
   keycloak:
-    auth-server-url: http://identity.yas.local.com
+    auth-server-url: http://identity.staging.yas.local.com
     realm: Yas
     resource: customer-management
     credentials:
@@ -283,7 +283,7 @@ searchApplicationConfig:
 paymentPaypalApplicationConfig:
   yas:
     public:
-      url: http://storefront.yas.local.com/complete-payment
+      url: http://storefront.staging.yas.local.com/complete-payment
 
 # Recommendation application config custom
 recommendationApplicationConfig:

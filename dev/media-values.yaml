@@ -1,7 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-media
-    tag: main
+    tag: uia
 
   nameOverride: media
   fullnameOverride: media

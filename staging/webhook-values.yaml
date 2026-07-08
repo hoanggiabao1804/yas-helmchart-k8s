@@ -1,9 +1,7 @@
 backend:
   image:
-    repository: ghcr.io/nashtech-garage/yas-webhook
-    tag: latest
-
+    repository: 23120022/yas-webhook
+    tag: v0.1.9
   nameOverride: webhook
   fullnameOverride: webhook
   databaseName: webhook
-

@@ -1,8 +1,7 @@
 backend:
   image:
-    repository: ghcr.io/nashtech-garage/yas-payment
-    tag: latest
-
+    repository: 23120022/yas-payment
+    tag: v0.1.9
   nameOverride: payment
   fullnameOverride: payment
   databaseName: payment

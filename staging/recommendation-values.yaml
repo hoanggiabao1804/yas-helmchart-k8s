@@ -1,8 +1,7 @@
 backend:
   image:
-    repository: ghcr.io/nashtech-garage/yas-recommendation
-    tag: latest
-
+    repository: 23120022/yas-recommendation
+    tag: v0.1.9
   nameOverride: recommendation
   fullnameOverride: recommendation
   databaseName: recommendation
@@ -20,4 +19,3 @@ backend:
       mountPath: /opt/yas/recommendation
   extraApplicationConfigPaths:
     - /opt/yas/recommendation/recommendation-application.yaml
-

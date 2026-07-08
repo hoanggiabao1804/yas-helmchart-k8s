@@ -1,7 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-product
-    tag: feea613
+    tag: v0.1.9
   nameOverride: product
   fullnameOverride: product
   databaseName: product

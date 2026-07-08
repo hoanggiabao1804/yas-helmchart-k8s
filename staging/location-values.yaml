@@ -1,11 +1,9 @@
 backend:
   image:
-    repository: ghcr.io/nashtech-garage/yas-location
-    tag: latest
-
+    repository: 23120022/yas-location
+    tag: v0.1.9
   nameOverride: location
   fullnameOverride: location
   databaseName: location
   ingress:
     enabled: false
-

@@ -1,11 +1,9 @@
 backend:
   image:
-    repository: ghcr.io/nashtech-garage/yas-promotion
-    tag: latest
-
+    repository: 23120022/yas-promotion
+    tag: v0.1.9
   nameOverride: promotion
   fullnameOverride: promotion
   databaseName: promotion
   ingress:
     enabled: false
-

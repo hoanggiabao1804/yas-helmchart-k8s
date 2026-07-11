@@ -1,7 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-product
-    tag: ec477b3
+    tag: 57750b55
   nameOverride: product
   fullnameOverride: product
   databaseName: product

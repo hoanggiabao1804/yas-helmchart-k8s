@@ -1,7 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-backoffice-bff
-    tag: ec477b3
+    tag: 3ddbc669
   nameOverride: backoffice-bff
   fullnameOverride: backoffice-bff
   deployment:

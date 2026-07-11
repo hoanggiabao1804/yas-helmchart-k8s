@@ -1,7 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-location
-    tag: d2511f4d
+    tag: ec477b3
   nameOverride: location
   fullnameOverride: location
   databaseName: location

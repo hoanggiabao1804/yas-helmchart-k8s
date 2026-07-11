@@ -1,7 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-storefront-bff
-    tag: d2511f4d
+    tag: ec477b3
   nameOverride: storefront-bff
   fullnameOverride: storefront-bff
   deployment:

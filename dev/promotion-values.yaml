@@ -1,7 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-promotion
-    tag: d2511f4d
+    tag: ec477b3
   nameOverride: promotion
   fullnameOverride: promotion
   databaseName: promotion

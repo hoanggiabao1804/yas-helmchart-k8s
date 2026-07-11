@@ -1,7 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-webhook
-    tag: d2511f4d
+    tag: ec477b3
   nameOverride: webhook
   fullnameOverride: webhook
   databaseName: webhook

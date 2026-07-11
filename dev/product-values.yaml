@@ -1,8 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-product
-    tag: main
-
+    tag: d2511f4d
   nameOverride: product
   fullnameOverride: product
   databaseName: product
@@ -16,4 +15,4 @@ backend:
     - name: product-application-config
       mountPath: /opt/yas/product
   extraApplicationConfigPaths:
-    - /opt/yas/product/product-application.yaml  
+    - /opt/yas/product/product-application.yaml

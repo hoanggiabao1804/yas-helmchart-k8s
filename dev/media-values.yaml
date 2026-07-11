@@ -1,7 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-media
-    tag: e8104af4
+    tag: d2511f4d
   nameOverride: media
   fullnameOverride: media
   databaseName: media

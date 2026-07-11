@@ -1,8 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-inventory
-    tag: main
-
+    tag: d2511f4d
   nameOverride: inventory
   fullnameOverride: inventory
   databaseName: inventory

@@ -1,8 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-order
-    tag: main
-
+    tag: d2511f4d
   nameOverride: order
   fullnameOverride: order
   databaseName: order
@@ -16,4 +15,4 @@ backend:
     - name: order-application-config
       mountPath: /opt/yas/order
   extraApplicationConfigPaths:
-    - /opt/yas/order/order-application.yaml  
+    - /opt/yas/order/order-application.yaml

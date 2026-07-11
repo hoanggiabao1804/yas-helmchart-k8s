@@ -1,8 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-tax
-    tag: main
-
+    tag: d2511f4d
   nameOverride: tax
   fullnameOverride: tax
   databaseName: tax

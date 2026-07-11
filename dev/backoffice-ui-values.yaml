@@ -1,7 +1,7 @@
 ui:
   image:
     repository: 23120022/yas-backoffice
-    tag: main
+    tag: d2511f4d
   nameOverride: backoffice-ui
   fullnameOverride: backoffice-ui
   ingress:

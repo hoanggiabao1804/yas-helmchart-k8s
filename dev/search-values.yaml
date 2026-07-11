@@ -1,8 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-search
-    tag: main
-
+    tag: d2511f4d
   nameOverride: search
   fullnameOverride: search
   databaseName: search

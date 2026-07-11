@@ -1,8 +1,7 @@
 backend:
   image:
     repository: 23120022/yas-customer
-    tag: main
-
+    tag: d2511f4d
   nameOverride: customer
   fullnameOverride: customer
   databaseName: customer
